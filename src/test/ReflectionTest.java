@@ -3,7 +3,7 @@ package test;
 import java.lang.reflect.*;
 import java.lang.String;
 /**
- * <pre>
+ * <pre> 
 * 任务：
 * 描述：(这里用一句话描述这个类的作用)
 * 作者：zhangnan 
@@ -26,11 +26,11 @@ public class ReflectionTest {
 			   he.salary=2f;
 			   Object obj=he.getProperty(he, "salary");
 			   
-			  System.out.println(obj.getClass()+":"+obj);
+			  System.out.println("1:"+obj.getClass()+":"+obj);
 			  ReflectionTest ho=new ReflectionTest();
 			  ho.salary=3.05f;
 			  Object obj2=ho.getStaticProperty("test.ReflectionTest", "salary");
-			  System.out.println(obj2.toString());
+			  System.out.println("2:"+obj2.toString());
 			  } catch(Exception e) {
 			   e.printStackTrace();
 			  }
